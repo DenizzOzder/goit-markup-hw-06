@@ -678,7 +678,7 @@ footer .container{
 @media (max-width: 768px){
   /* Mobil - Header */
   .container{
-    width: 100%;
+    width: 320px;
   }
   .header .container{
     display: none;
@@ -701,7 +701,7 @@ footer .container{
     margin: 0 auto;
     padding: 0 auto;
     overflow-x: hidden;
-    width: 320px;
+    width: 100%;
   }
   main{
     width: 100%;
@@ -818,7 +818,8 @@ footer .container{
     }
     .section-our-team .container .our-team-list .our-team-list-item{
       width: 264px;
-      margin: 72px 28px;
+      margin: 0 auto;
+      margin-bottom: 72px;
     }
     .our-team-list-item-container{
       border-radius: 0px 0px 10px 10px;
@@ -827,7 +828,7 @@ footer .container{
       box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     }
     .section-portfolio{
-      width: 288px;
+      width: 100%;
     }
     .section-portfolio-list{
       flex-direction: column;
@@ -836,7 +837,7 @@ footer .container{
       width: 100%;
     }
     .footer{
-      width: 320px;
+      width: 100%;
       height: 664px;
     }
     .footer .container{
