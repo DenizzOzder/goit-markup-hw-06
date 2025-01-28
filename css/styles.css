@@ -648,7 +648,7 @@ footer .container{
   color: #4d5ae5;
 }
 .modalform-button{
-  margin-left: 100px;
+  margin: auto;
   display: block;
   min-width: 169px;
   height: 56px;
@@ -666,17 +666,27 @@ footer .container{
   margin-bottom: 16px;
 }
 /* RESPONSIVE */
-.modal-window{
+/*  MODAL WINDWO HIDE*/
+/* .modal-window {
   display: none;
-}
+} */
 .header .mobil-container {
   display: none;
+}
+@media (min-width: 1158px){
+
 }
 @media (max-width: 1158px){
 
 }
 @media (max-width: 768px){
   /* Mobil - Header */
+  .modal-container{
+    top: 8px;
+    left: 16px;
+    transform: translate(-5px,0);
+    width: 95%;
+  }
   .container{
     width: 320px;
   }
