@@ -257,6 +257,12 @@ address ul li .list-items:focus{
       justify-content: center;
       gap: 24px;
   }
+    .our-team-list-item-container {
+      border-radius: 0px 0px 10px 10px;
+      box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+      box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
+      box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    }
 .section-our-team ul li{
     list-style-type: none ;
   }
@@ -667,19 +673,138 @@ footer .container{
 }
 /* RESPONSIVE */
 /*  MODAL WINDWO HIDE*/
-/* .modal-window {
+.modal-window {
   display: none;
-} */
+}
 .header .mobil-container {
   display: none;
 }
-@media (min-width: 1158px){
-
-}
 @media (max-width: 1158px){
+  body{
+    width: 100vw;
+  }
+  nav{
+    gap: 120px;
+  }
+    .header{
+    width: 100%;
+  }
+  nav .logo{
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .header .container{
+    position: relative;
+    width: 100%;
+    justify-content: normal;
+    padding: 0;
+  }
+  .contact-info{
+    padding:0;
+    margin-left: 120px;
+    height: 100%;
+  }
+  .contact-info .contact-info-list{
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 0;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .contact-info .contact-info-list .list-items{
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  }
+  /* 2. Section */
+  main{
+    width: 100vw;
+  }
+  main .section-pecularities{
+    width: 100%;
+  }
+  .section-pecularities .container{
+    width: 100%;
+  }
+  .section-pecularities .container .pecularities-icons{
+    display: none;
+  }
+  .section-pecularities ul{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .section-pecularities .pecularities-list-item{
+    width: 48%;
+  }
+  .section-pecularities h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+  .section-pecularities p{
+    width: 100%;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+  .section-our-team .container{
+    width: 100%;
+    padding: 0 0;
+  }
+  .section-our-team .container .our-team-list{
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 68px;
+  }
+  .section-our-team .our-team-list-item{
+    width: calc((100% - 240px)/2);
+    height: auto;
+  }
+  .our-team-list-item img{
+    width: 100%;
+    height: auto;
+  }
+  .section-portfolio{
+    width: 100%;
+  }
+  .section-portfolio .container{
+    width: 100%;
+  }
+  .section-portfolio-list{
+    width: 100%;
+  }
+  .section-portfolio-list-item{
+    width: calc((100% - 56px)/2);
+  }
+  .section-portfolio-list img{
+    width: 100%;
+    height: auto;
+  }
+  .footer{
+    width: 100%;
+  }
+  .footer .container{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  .footer .container div{
+    width: calc((100% - 296px)/2);
+  }
+  .footer-logo-container{
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .footer .container .footer-subscribe{
+    margin-left: 0;
+    width:calc((100% - 315px)/1);
+  }
 
 }
-@media (max-width: 768px){
+
+@media (max-width: 767px){
   /* Mobil - Header */
   .modal-container{
     top: 8px;
@@ -793,10 +918,10 @@ footer .container{
     .section-pecularities .container .pecularities-list{
        flex-direction: column;
     }
-        .section-pecularities .container .pecularities-list .pecularities-list-item{
-          width: 100%;
+    .section-pecularities .container .pecularities-list .pecularities-list-item{
+      width: 100%;
         }
-        .section-pecularities .container .pecularities-list .pecularities-list-item .pecularities-icons{
+      .section-pecularities .container .pecularities-list .pecularities-list-item .pecularities-icons{
       display: none;
     }
     .section-pecularities .container .pecularities-list .pecularities-list-item .pecularities-list-item-heading{
@@ -831,12 +956,6 @@ footer .container{
       margin: 0 auto;
       margin-bottom: 72px;
     }
-    .our-team-list-item-container{
-      border-radius: 0px 0px 10px 10px;
-      box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-      box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-      box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    }
     .section-portfolio{
       width: 100%;
     }
@@ -863,11 +982,16 @@ footer .container{
       width: 100%;
     }
     .footer-logo-container a, .footer-social-paragraph, .footer-headpara{
+      margin: auto;
       text-align: center;
       width: 100%;
     }
+    .footer-content{
+      margin: auto;
+    }
     .footer-social-paragraph{
       text-align: center;
+      margin: auto;
     }
     .footer-social-list{
       justify-content: center;
