@@ -674,13 +674,13 @@ footer .container{
 }
 /* RESPONSIVE */
 /*  MODAL WINDWO HIDE*/
-.modal-window {
+/* .modal-window {
   display: none;
-}
+} */
 .header .mobil-container {
   display: none;
 }
-@media (max-width: 1158px){
+@media (min-width:768px) and (max-width: 1158px){
   body{
     width: 100vw;
   }
@@ -807,6 +807,15 @@ footer .container{
 
 @media (max-width: 767px){
   /* Mobil - Header */
+  .mobil-container .mobil-menu .contact-info-list{
+    align-items: flex-start;
+  }
+  .mobil-container .mobil-menu .contact-info-list .list-items{
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 24px;
+   font-family: inherit;
+  }
   .modal-container{
     top: 8px;
     left: 16px;
