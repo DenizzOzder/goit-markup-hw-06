@@ -860,7 +860,6 @@ footer .container{
     display: block;
     position: absolute;
     top: 0px;
-    border: 1px solid red;
   }
   .is-open{
     visibility: visible;
